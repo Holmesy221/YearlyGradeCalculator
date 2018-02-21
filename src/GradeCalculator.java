@@ -6,14 +6,8 @@ public class GradeCalculator {
     public static void main(String args[]) {
 
         Scanner scanner = new Scanner(System.in);
-        int a;
-        int b;
-        int c;
-        int d;
-        int e;
-        int f;
+        int a,b,c,d,e,f,g,h,i,j,k;
         double average = 0;
-
 
         System.out.println("Welcome to the grade calculator.");
         System.out.println("Option one: Year 2 + 3 final mark");
@@ -28,40 +22,75 @@ public class GradeCalculator {
 
             case 1:
                 System.out.println("You choose option one");
+                System.out.println("Enter 120 credits of the best marks for year 2");
+
+                System.out.println("Enter your first module mark: ");
+                a = scanner.nextInt();
+
+                System.out.println("Enter your second mark: ");
+                b = scanner.nextInt();
+
+                System.out.println("Enter your third mark: ");
+                c = scanner.nextInt();
+
+                System.out.println("Enter your fourth mark: ");
+                d = scanner.nextInt();
+
+                System.out.println("Enter your fifth mark: ");
+                e = scanner.nextInt();
+
+                System.out.println("Enter your sixth mark: ");
+                f = scanner.nextInt();
+
+                System.out.println("Now enter 100 credits worth of the best marks for year 3");
+
+                System.out.println("Enter your first mark: ");
+                g = scanner.nextInt();
+                System.out.println("Enter your second mark: ");
+                h = scanner.nextInt();
+
+                System.out.println("Enter your third mark: ");
+                i = scanner.nextInt();
+                System.out.println("Enter your fourth mark: ");
+                j = scanner.nextInt();
+                System.out.println("Enter your fifth mark: ");
+                k = scanner.nextInt();
+
+                int sum = a + b + c + d + e + f + g + h +i +j +k;
+                average = (double) sum / 11;
+
+                System.out.println("Your final mark is: " + average);
+
                 break;
 
             case 2:
 
-        System.out.println("Enter your first module mark: ");
-        a = scanner.nextInt();
+                System.out.println("Enter your first module mark: ");
+                a = scanner.nextInt();
 
-        System.out.println("Enter your second mark: ");
-        b = scanner.nextInt();
+                System.out.println("Enter your second mark: ");
+                b = scanner.nextInt();
 
-        System.out.println("Enter your third mark: ");
-        c = scanner.nextInt();
+                System.out.println("Enter your third mark: ");
+                c = scanner.nextInt();
 
-        System.out.println("Enter your fourth mark: ");
-        d = scanner.nextInt();
+                System.out.println("Enter your fourth mark: ");
+                d = scanner.nextInt();
 
-        System.out.println("Enter your fifth mark: ");
-        e = scanner.nextInt();
+                System.out.println("Enter your fifth mark: ");
+                e = scanner.nextInt();
 
-        System.out.println("Enter your sixth mark: ");
-        f = scanner.nextInt();
+                System.out.println("Enter your sixth mark: ");
+                f = scanner.nextInt();
 
-        int sum = a + b + c + d + e + f;
+                sum = a + b + c + d + e + f;
 
-        average = (double) sum / 6;
+                average = (double) sum / 6;
 
-        System.out.println("Your yearly mark is: " + average);
-        break;
+                System.out.println("Your yearly mark is: " + average);
+                break;
+        }
     }
-
-    }
-
-
-    }
-
+}
 
 
